@@ -153,10 +153,28 @@ namespace Variables_Exercise_01
             myBool01 = false;
             myBool02 = true;
             System.Console.WriteLine($"bool:    Min: {myBool01} || Max: {myBool02}");
+
+            Console.WriteLine("John's Enum: ");
+            foreach (string str in MyEnum.GetNames(typeof(MyEnum)))
+            {
+                Console.WriteLine(str);
+            }
+            // **BONUS**
+            // TODO: Create your own enum and initialize it with constants of your choosing
+            // TODO: Declare it and then iterate through it writing out to the console            
+            // TODO: Instantiate a struct and initialize all of it's members
+            Console.WriteLine("Blake's Enum: ");
+            foreach (string str in BlakesEnum.GetNames(typeof(BlakesEnum)))
+            {
+                Console.WriteLine(str);
+            }
+            Console.WriteLine("Blake's Enum values: ");
+            foreach (int i in BlakesEnum.GetValues(typeof(BlakesEnum)))
+            {
+                Console.WriteLine(i);
+            }
         }
-        // **BONUS**
-        // TODO: Create your own enum and initialize it with constants of your choosing
-        // TODO: Declare it and then iterate through it writing out to the console            
-        // TODO: Instantiate a struct and initialize all of it's members
+
+        public enum BlakesEnum { Spring = 1, Summer = 2, Autumn = 3, Winter = 4 };
     }
 }
