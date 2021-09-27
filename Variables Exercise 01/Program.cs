@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Variables_Exercise_01
 {
@@ -147,7 +148,7 @@ namespace Variables_Exercise_01
 
             myChar01 = char.MinValue;
             myChar02 = char.MaxValue;
-            System.Console.WriteLine($"char:    Min: {myChar01} || Max: {myChar02}");
+            System.Console.WriteLine($"char:    Min: {Convert.ToInt32(myChar01)} || Max: {Convert.ToInt32(myChar02)}");
 
             myBool01 = false;
             myBool02 = true;
