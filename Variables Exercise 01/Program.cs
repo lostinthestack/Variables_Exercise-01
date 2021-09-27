@@ -179,6 +179,10 @@ namespace Variables_Exercise_01
                 structInt02 = 2,
                 structInt03 = 3
             };
+            var fields = myStruct.GetType().GetFields();
+            Console.WriteLine("Output from looping through fields of myStruct:");
+            foreach (var x in fields)
+                Console.WriteLine(x.GetValue(myStruct).ToString());
         }
 
         public enum BlakesEnum { Spring = 1, Summer = 2, Autumn = 3, Winter = 4 };
