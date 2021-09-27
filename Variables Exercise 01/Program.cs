@@ -173,14 +173,16 @@ namespace Variables_Exercise_01
                 Console.WriteLine(i);
             }
             // TODO: Instantiate a struct and initialize all of it's members
-            myStruct newMyStruct = new myStruct();
-            newMyStruct.structInt01 = 1;
-            newMyStruct.structInt02 = 2;
-            newMyStruct.structInt03 = 3;
+            MyStruct myStruct = new MyStruct
+            {
+                structInt01 = 1,
+                structInt02 = 2,
+                structInt03 = 3
+            };
         }
 
         public enum BlakesEnum { Spring = 1, Summer = 2, Autumn = 3, Winter = 4 };
-        public struct myStruct
+        public struct MyStruct
         {
             public int structInt01;
             public int structInt02;
