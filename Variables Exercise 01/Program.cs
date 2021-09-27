@@ -162,7 +162,6 @@ namespace Variables_Exercise_01
             // **BONUS**
             // TODO: Create your own enum and initialize it with constants of your choosing
             // TODO: Declare it and then iterate through it writing out to the console            
-            // TODO: Instantiate a struct and initialize all of it's members
             Console.WriteLine("Blake's Enum: ");
             foreach (string str in BlakesEnum.GetNames(typeof(BlakesEnum)))
             {
@@ -173,8 +172,19 @@ namespace Variables_Exercise_01
             {
                 Console.WriteLine(i);
             }
+            // TODO: Instantiate a struct and initialize all of it's members
+            myStruct newMyStruct = new myStruct();
+            newMyStruct.structInt01 = 1;
+            newMyStruct.structInt02 = 2;
+            newMyStruct.structInt03 = 3;
         }
 
         public enum BlakesEnum { Spring = 1, Summer = 2, Autumn = 3, Winter = 4 };
+        public struct myStruct
+        {
+            public int structInt01;
+            public int structInt02;
+            public int structInt03;
+        }
     }
 }
